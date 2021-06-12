@@ -28,7 +28,7 @@ namespace GmailBot.AutomationProcess
         {
             try
             {
-                //set up DI
+                //set up DI//
                 var serviceProvider = new ServiceCollection()
                     .AddScoped<IWebAutomationSvc, WebAutomationSvc>(sp => new WebAutomationSvc())
                     .BuildServiceProvider();
