@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using GmailBot.AutomationProcess;
+using System.Diagnostics;
 
 namespace GmailBot
 {
@@ -10,6 +7,10 @@ namespace GmailBot
     {
         static void Main(string[] args)
         {
+            AutomationFlow automationFlow = new AutomationFlow();
+            automationFlow.EmailSignUpAutomation();
+
+            Process.GetCurrentProcess().Kill();
         }
     }
 }
