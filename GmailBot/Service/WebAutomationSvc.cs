@@ -136,6 +136,25 @@ namespace GmailBot.Service
                 throw;
             }
         }
+        public bool ExecuteJS(string js)
+        {
+            try
+            {
+                var jse = (IJavaScriptExecutor)_driver;
+
+                // The minified JavaScript to execute
+                string script = js;
+
+                // Start Scrolling
+                jse.ExecuteScript(script);
+
+                return true;
+            }
+            catch(Exception ex)
+            {
+                throw;
+            }
+        }
         /// <summary>
         /// CloseWebDriver
         /// </summary>

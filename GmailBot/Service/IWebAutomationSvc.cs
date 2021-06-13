@@ -40,6 +40,12 @@ namespace GmailBot.Service
         /// <returns></returns>
         IWebElement PerformAction(IWebElement element, string tagCategory, string value = "");
         /// <summary>
+        /// ExecuteJS
+        /// </summary>
+        /// <param name="js"></param>
+        /// <returns></returns>
+        bool ExecuteJS(string js);
+        /// <summary>
         /// CloseWebDriver
         /// </summary>
         /// <param name="sleepTimeInSec"></param>

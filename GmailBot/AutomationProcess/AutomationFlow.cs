@@ -17,7 +17,8 @@ namespace GmailBot.AutomationProcess
         }
         public void EmailSignUpAutomation()
         {
-            
+            AutomationProcess automationProcess = new AutomationProcess();
+            automationProcess.EmailSignUpAutomation();
         }
     }
 }
